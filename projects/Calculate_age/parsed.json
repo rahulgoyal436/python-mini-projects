@@ -1,0 +1,23 @@
+{
+    "/var/tmp/Roost/RoostGPT/roost-test/1697198230/python-mini-projects/projects/Calculate_age/calculate.py": [
+        {
+            "filename": "/var/tmp/Roost/RoostGPT/roost-test/1697198230/python-mini-projects/projects/Calculate_age/calculate.py",
+            "code": "def judge_leap_year(year):\n    if isleap(year):\n        return True\n    else:\n        return False\n",
+            "num_dependencies": 1,
+            "ext_dependencies": [
+                {
+                    "type": "function",
+                    "name": "isleap"
+                }
+            ],
+            "prompt": "\n### BEGIN ---- /var/tmp/Roost/RoostGPT/roost-test/1697198230/python-mini-projects/projects/Calculate_age/calculate.py judge_leap_year ---- ###\nGenerate a Python unit Test for the given method judge_leap_year\nConsider the following imports for the test : \n\timport time\n\tfrom calendar import isleap\n\n\nThe program code besides the method judge_leap_year is \n```\nname = input('input your name: ')\nage = input('input your age: ')\nlocaltime = time.localtime(time.time())\nyear = int(age)\nmonth = year * 12 + localtime.tm_mon\nday = 0\nbegin_year = int(localtime.tm_year) - year\nend_year = begin_year + year\nfor y in range(begin_year, end_year):\n    if judge_leap_year(y):\n        day = day + 366\n    else:\n        day = day + 365\nleap_year = judge_leap_year(localtime.tm_year)\nfor m in range(1, localtime.tm_mon):\n    day = day + month_days(m, leap_year)\nday = day + localtime.tm_mday\nprint(\"%s's age is %d years or \" % (name, year), end='')\nprint('%d months or %d days' % (month, day))\n\n```\n\nROOST_USER_INPUT\nGenerate a Python Unit Test for this function 'judge_leap_year'\nimport calculate\nimport unittest\n Add a # TODO comment wherever user is expected to provide input\n\n### END ---- /var/tmp/Roost/RoostGPT/roost-test/1697198230/python-mini-projects/projects/Calculate_age/calculate.py judge_leap_year ---- ###\n",
+            "name": "calculate.judge_leap_year"
+        },
+        {
+            "filename": "/var/tmp/Roost/RoostGPT/roost-test/1697198230/python-mini-projects/projects/Calculate_age/calculate.py",
+            "code": "def month_days(month, leap_year):\n    if month in [1, 3, 5, 7, 8, 10, 12]:\n        return 31\n    elif month in [4, 6, 9, 11]:\n        return 30\n    elif month == 2 and leap_year:\n        return 29\n    elif month == 2 and (not leap_year):\n        return 28\n",
+            "prompt": "\n### BEGIN ---- /var/tmp/Roost/RoostGPT/roost-test/1697198230/python-mini-projects/projects/Calculate_age/calculate.py month_days ---- ###\nGenerate a Python unit Test for the given method month_days\nConsider the following imports for the test : \n\timport time\n\tfrom calendar import isleap\n\n\nThe program code besides the method month_days is \n```\nname = input('input your name: ')\nage = input('input your age: ')\nlocaltime = time.localtime(time.time())\nyear = int(age)\nmonth = year * 12 + localtime.tm_mon\nday = 0\nbegin_year = int(localtime.tm_year) - year\nend_year = begin_year + year\nfor y in range(begin_year, end_year):\n    if judge_leap_year(y):\n        day = day + 366\n    else:\n        day = day + 365\nleap_year = judge_leap_year(localtime.tm_year)\nfor m in range(1, localtime.tm_mon):\n    day = day + month_days(m, leap_year)\nday = day + localtime.tm_mday\nprint(\"%s's age is %d years or \" % (name, year), end='')\nprint('%d months or %d days' % (month, day))\n\n```\n\nROOST_USER_INPUT\nGenerate a Python Unit Test for this function 'month_days'\nimport calculate\nimport unittest\n Add a # TODO comment wherever user is expected to provide input\n\n### END ---- /var/tmp/Roost/RoostGPT/roost-test/1697198230/python-mini-projects/projects/Calculate_age/calculate.py month_days ---- ###\n",
+            "name": "calculate.month_days"
+        }
+    ]
+}
