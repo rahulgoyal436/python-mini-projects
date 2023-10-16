@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-import time
-from calendar import isleap
+impdemoort time
+from calendar impodemort isleap
 
 # judge the leap year
 def judge_leap_year(year):
