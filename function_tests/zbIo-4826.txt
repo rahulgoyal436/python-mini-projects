@@ -1,0 +1,43 @@
+Functional Test Cases:
+
+1. Test Case: Verify the behavior when valid user input is provided.
+    - Input: User enters a valid input when board_type 'none' is selected.
+    - Action: System takes user input and processes it.
+    - Expected Output: System should successfully accept and process the user input.
+
+2. Test Case: Verify the behavior when invalid user input is provided.
+    - Input: User enters an invalid value when board_type 'none' is selected.
+    - Action: System tries to process the invalid input.
+    - Expected Output: System should throw an error or warning indicating that the input is invalid.
+
+3. Test Case: Check the system behavior with an empty input.
+    - Input: Leave the input box empty/blank and click on submit/next.
+    - Action: System tries to proceed to the next step.
+    - Expected Output: System should throw an error, reminding the user to enter a valid input.
+
+Non-Functional Test Cases:
+
+1. Test Case: Check the response time of the system when user gives input and it's being processed.
+    - Input: Enter a valid user input when board_type 'none' is selected.
+    - Action: System processes the user input and submits it.
+    - Expected Output: System should respond within a sensible time period.
+
+2. Test Case: Verify the input box design, readability, and visual aspects when board_type is 'none'.
+    - Input: Visual aspects and usability of the input box when board_type 'none' is selected.
+    - Action: User navigates through the input box and provides input.
+    - Expected Output: The user should be able to comfortably read and enter data into the input field.
+
+3. Test Case: Verify the system behavior under maximum load (Peak load test).
+    - Input: Simulate multiple concurrent users entering data when board_type is 'none'.
+    - Action: Monitor system performance under maximum load scenario.
+    - Expected Output: Despite high traffic, the system should function smoothly without significant slowdown or errors. 
+
+4. Test Case: Check the system performance under normal load (Stress test).
+   - Input: Simulate normal user load entering data when board_type is 'none'.
+   - Action: Monitor system performance under normal load scenario.
+   - Expected Output: The system should function normally and smoothly without significant errors or slowdown.
+
+5. Test Case: Verify the system's resilience to potential security threats while taking user input.
+    - Input: Test for SQL injection, Cross Site Scripting (XSS), Cross Site Request Forgery (CSRF), and other potential security threats.
+    - Action: Analyze the system for any potential data leaks or vulnerabilities.
+    - Expected Output: The system should not be vulnerable to any type of security threats and should maintain the integrity and security of user data.
