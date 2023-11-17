@@ -1,0 +1,61 @@
+Functional Test Cases:
+
+1. **Test Case ID: TC_01**
+
+   - **Test Scenario:** Verify that the system takes user input when the board_type is 'none'.
+   - **Test Steps:**
+     - Open the application
+     - Navigate to the option where the board_type is asked
+     - Select the board_type as 'none'
+     - Observe if the system is asking for further user input
+   - **Input:** Select 'none' for board_type
+   - **Expected Output:** The system should prompt the user for additional input.
+
+2. **Test Case ID: TC_02**
+
+   - **Test Scenario:** Check exception handling when the board_type is 'none' and user doesn't input anything further.
+   - **Test Steps:**
+     - Open the application
+     - Navigate to the option where the board_type is asked
+     - Select the board_type as 'none'
+     - Do not provide any further input
+     - Observe system behavior
+   - **Input:** No further input provided after selecting none for board_type
+   - **Expected Output:** The system should handle this by providing a message, asking user to input the necessary details. 
+
+3. **Test Case ID: TC_03**
+
+   - **Test Scenario:** Verify the functionality of Back or Cancel Feature when board_type is 'none'
+   - **Test Steps:**
+     - Open the application
+     - Navigate to the area where the board_type is asked
+     - Select the option 'none' for board_type
+     - Use the Back or Cancel Feature to go back from this point.
+   - **Input:** Select 'none' for board_type and then use the Back or Cancel feature.
+   - **Expected Output:** The system should successfully navigate back to the previous screen or cancel the current action.
+
+Non-Functional Test Cases:
+
+1. **Test Case ID: NF_01**
+
+   - **Test Scenario:** Check the system performance when the board_type is 'none' and user is inputting the data.
+   - **Test Steps:**
+     - Open the application
+     - Navigate to the option where the board_type is asked
+     - Select 'none' for board_type
+     - Input the necessary details.
+     - Observe the system performance.
+   - **Input:** Select none for board_type and provide necessary details.
+   - **Expected Output:** The system should not lag or freeze. The input provided by the user should be instantly updated without any performance issues.
+   
+2. **Test Case ID: NF_02**
+
+   - **Test Scenario:** Verify the User Interface when board_type is 'none' and user provides input
+   - **Test Steps:**
+     - Open the application
+     - Navigate to the option where the board_type is asked
+     - Select 'none'
+     - Input the necessary details.
+     - Observe if there are any UI glitches during this process.
+   - **Input:** Select none for board_type and provide necessary details.
+   - **Expected Output:** The UI should be responsive and consistent, and there should be no UI glitches or distortions.
