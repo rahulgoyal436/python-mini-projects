@@ -1,0 +1,40 @@
+Functional Test Cases:
+
+1. Test Case to verify user input when board_type is 'none'
+   - Input: board_type = 'none'
+   - Expected Result: System prompts for user input
+   - Edge Case: If the user provides invalid input, the system should present an error message and re-prompt the user for input
+
+2. Test Case to examine system performance when board_type has a value
+   - Input: board_type = 'value'
+   - Expected Result: The System does not prompt for user input
+   - Edge Case: If the value is non-existent or not recognized by the system, it should consider it as 'none' and prompt for user input
+
+3. Test Case to check system behavior when no input is provided
+   - Input: Without input
+   - Expected Result: The system should consider board_type as 'none' and prompt for user input
+   - Edge Case: If the system still doesn't receive an input, an error message should be displayed
+
+4. Test Case to verify the user input validation
+   - Input: User provides input after being prompted
+   - Expected Result: The System accepts the user input and proceeds
+   - Edge Case: If the user input is irrelevant or not accepted by the system, it should present an error message and re-prompt the user
+
+
+Non-Functional Test Cases:
+
+1. Test Case to check the system responsiveness
+   - Input: board_type = 'none'
+   - Expected Result: The system promptly asks for user input without delay
+
+2. Test Case to examine the user experience
+   - Input: board_type = 'none'
+   - Expected Result: The prompt asking user input is clear, precise, and has a friendly tone
+
+3. Test Case to verify system reliability
+   - Input: board_type repeatedly set as 'none'
+   - Expected Result: The system should consistently prompt for user input each time
+
+4. Test Case to check the system's error handling capability
+   - Input: Incorrect or unrecognized input given by the user
+   - Expected Result: The system should handle the erroneous condition gracefully by displaying a relevant error message and re-prompting the user for the correct input.
