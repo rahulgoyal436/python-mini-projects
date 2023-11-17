@@ -1,0 +1,43 @@
+Functional Test Cases:
+
+Test Case 1:
+  - Title: Validate Input option when Board Type is 'none'
+    - Input: Board Type = 'none'
+    - Procedure: Check whether it prompts for user input when the board type is 'none'.
+    - Expected Output: The system should provide an option for the user input.
+    - Edge Case: If the user tries to bypass the input option, the application should keep prompting until valid input is provided.
+
+Test Case 2:
+  - Title: Confirm successful acceptance of user input
+    - Input: Board Type = 'none', User input
+    - Procedure: The application should accept and process the user input appropriately.
+    - Expected Output: The application processes the input and updates the board type as per user input.
+
+Test Case 3:
+  - Title: Validate input response with different Board types
+    - Input: Board Type = various types
+    - Procedure: Check if the application prompts for user input for each type of board.
+    - Expected Output: The application should only prompt for user input when the board type is 'none'.
+    - Edge Case: The system should throw an error or prompt for user input when unknown or invalid board type is inserted.
+
+Non-Functional Test Cases:
+
+Test Case 1:
+  - Title: Usability test for user input option
+    - Procedure: Check if the user input option is understandable and user-friendly. 
+    - Expected Output: The prompts for user input should be easy to understand, and the user should be able to provide input smoothly.
+
+Test Case 2:
+  - Title: Performance test for input acceptance
+    - Procedure: Check the system performance when different user inputs are being accepted and processed.
+    - Expected Output: The system should not slow down or crash while accepting and processing user inputs.
+
+Test Case 3:
+  - Title: Compatibility test with different board types
+    - Procedure: Check the application's compatibility with different board types other than 'none'.
+    - Expected Output: The application should be compatible and functional with other board types without asking for user input.
+
+Test Case 4:
+  - Title: Security test for user input
+    - Procedure: Check if the user input fields are vulnerable to any security threats.
+    - Expected Output: The user input fields should be secure and should not make the system vulnerable.
