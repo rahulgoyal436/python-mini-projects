@@ -1,0 +1,39 @@
+Functional Test Cases:
+
+1. Test for Correct User Input Prompt
+  - Actions: Execute the operation when board_type is set to "none".
+  - Input: board_type = none
+  - Expected Result: The program prompts the user for input.
+  - Possible Edge Case: No edge case
+
+2. Test for Board_type Selection
+  - Actions: Give the user an option to change the board_type from 'none' to another valid type.
+  - Input: board_type = none
+  - Expected Result: The system should show list of all the valid board types the user can select from.
+  - Possible Edge Case: Ensure the system handles situations where an invalid or null board type is entered.
+
+3. Test for Board_type Retaining
+   - Actions: After input is taken, the program should retain the board_type set by the user.
+  - Input: User input of board_type
+  - Expected Result: The board_type in the system should match the board_type inputted by the user.
+  - Possible Edge Case: Ensure that the system handles cases where no input is received (user skips the step or inputs blank) 
+
+Non-Functional Test Cases:
+
+1. Test for User-Input Timeliness
+  - Actions: The software should prompt the user for input immediately after it is set to 'none'.
+  - Expected Result: There is no noticeable delay between board_type being set to 'none' and the user being prompted for input.
+  - Possible Edge Case: Check how the system behaves when there is an excessive delay in user response.
+
+2. Test for System Performance 
+   - Actions: The system should perform in an efficient manner while taking the input.
+   - Expected Result: There should be no crashes, the system performance should not be hampered.
+   - Possible Edge Case: Ensure the system performance when the system's resources are almost at full capacity.
+
+3. Test for Input Error Handling 
+   - Actions: The system should effectively handle incorrect input.
+   - Expected Result: Informative error messages should be produced in case of incorrect input.
+   - Possible Edge Case: Verify the system can handle extreme cases such as input with characters exceeding the limit, or input in wrong format. 
+
+ 
+Note: The above test cases are assuming the context of software where 'board_type' is an attribute and 'none' is one of its possible values. Each test case begins with a functional or non-functional action to be tested. The 'Possible Edge Case' section covers scenarios that might happen outside of regular operation for that test case.
