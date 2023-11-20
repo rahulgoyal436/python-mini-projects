@@ -1,0 +1,38 @@
+FUNCTIONAL TEST CASES:
+
+1. Test Case ID: TC-001
+   Description: Verify the system takes user input when board_type is 'none'.
+    - Input: board_type = 'none'.
+    - Expected Output: The system should allow user input.
+    - Edge Case: If the user doesn't provide an input, the system should prompt for user input.
+
+2. Test Case ID: TC-002
+   Description: Verify the user input for invalid data when board_type is 'none'.
+    - Input: board_type = 'none', and the user enters invalid data.
+    - Expected Output: The system should validate the user input and display an error message for invalid data.
+    - Edge Case: If the user tries to proceed without correcting invalid data, the system should not allow proceeding.
+
+3. Test Case ID: TC-003
+   Description: Verify the system reacts appropriately when board_type is not 'none', and it should not prompt for user input.
+    - Input: board_type != 'none'.
+    - Expected Output: The system should not prompt for user input.
+    - Edge Case: Changing board_type to 'none' after initially setting it to something else should prompt for user input.
+
+NON FUNCTIONAL TEST CASES:
+
+1. Test Case ID: NTC-001
+    Description: Verify the system's performance when taking user input for board_type = 'none'.
+    - Input: board_type = 'none'.
+    - Expected Output: The system takes user input and processes it within a reasonable time (e.g. 1-2 seconds).
+
+2. Test Case ID: NTC-002
+   Description: Verify the system's response when a large amount of input data is entered by the user.
+    - Input: board_type = 'none', and user enters a large input data.
+    - Expected Output: The system should handle it smoothly without any performance lag or crash.
+
+3. Test Case ID: NTC-003
+   Description: Verify the system's usability, i.e., the user interface for user input is easy to interact with, and user-friendly.
+    - Input: board_type = 'none'.
+    - Expected Output: The user interface should be intuitive and easy to use for entering input data. Users should not face difficulty in understanding what input is required.
+   
+Each test case provides the input, the expected output, and special conditions in the form of edge cases that need to be tested.
