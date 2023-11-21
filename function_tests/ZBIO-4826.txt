@@ -1,0 +1,36 @@
+Functional Tests:
+
+1. Test Case ID: TC_FT_01
+   - Description: Test if the system properly takes the user's input when 'board_type' set to 'none'.
+   - Input: Set 'board_type' to 'none', enter any user input.
+   - Expected Output: The system should accept the user's input successfully.
+   - Edge Cases: If the user doesn't provide any inputs, a warning message should be prompted asking the user for input.
+
+2. Test Case ID: TC_FT_02
+   - Description: Check if the system prompts the user for input only when 'board_type' is set to 'none'.
+   - Input: Set 'board_type' to any value other than 'none'.
+   - Expected Output: The system should not prompt the user for further input.
+   - Edge Cases: If board_type is 'none', but the user has previously input a value, the system should prompt for a new value.
+
+3. Test Case ID: TC_FT_03
+   - Description: Enter a sequence of commands and check the system's reactions when 'board_type' changes to 'none'.
+   - Input: Set 'board_type' to a certain value other than 'none', then change it to 'none'.
+   - Expected Output: As soon as 'board_type' is set to 'none', the system should stop the current operations and prompt the user for input.
+   - Edge Cases: If 'board_type' is changed to 'none' during a process, the system should safely terminate the current operation without causing damage or data loss.
+
+Non-Functional Tests:
+
+1. Test Case ID: TC_NFT_01
+  - Description: Check the system's performance when multiple users are making inputs simultaneously, with 'board_type' set to 'none'.
+  - Input: Simulate multiple users entering input at the same time.
+  - Expected Output: The system should be able to handle multiple simultaneous inputs without significant performance degradation.
+
+2. Test Case ID: TC_NFT_02
+  - Description: Validate the data integrity for user input when 'board_type' is 'none'.
+  - Input: Enter user input, disconnect the user abruptly, and then reconnect.
+  - Expected Output: Once back online, the user should find the previous input either stored safely or the system should prompt for input again.
+
+3. Test Case ID: TC_NFT_03
+  - Description: Usability test, check the prompts and instructions given by system are clear and unambiguous when 'board_type' becomes 'none'.
+  - Input: 'board_type' is 'none'.
+  - Expected Output: The system should display clear, concise, and helpful prompts and messages for the users to input their data.
