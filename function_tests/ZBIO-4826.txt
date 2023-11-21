@@ -1,0 +1,36 @@
+Functional Test Cases:
+
+Test Case 1:
+  - Test Name : Verify functionality when 'board_type' is 'none' and user input is provided.
+    - Input : 'board_type' value provided as 'none', user input ('dummy') is provided.
+    - Expected Output : The system should successfully accept the user input 'dummy'.
+    - Edge cases : Check with null values in user input, system should not accept.
+
+Test Case 2:
+  - Test Name : Verify functionality when 'board_type' is 'none' and no user input is provided.
+    - Input : 'board_type' value provided as 'none', no user input is provided.
+    - Expected Output : The system should display a message stating user input is required.
+    - Edge cases : Check with spaces or special characters as user input, system should return error/notification stating invalid input.
+
+Test Case 3:
+  - Test Name : Verify functionality when 'board_type' is not 'none'.
+    - Input : Provide 'board_type' value other than 'none'.
+    - Expected Output : System should not ask for user input. It should continue with usual operation.
+
+Non-functional Test Cases:
+
+Test Case 4:
+  - Test Name : Verify the system response time when 'board_type' is 'none' and user input is provided.
+    - Input : 'board_type' value is 'none', user input ('dummy') is provided.
+    - Expected Output : The system response time should be within the acceptable range defined by the system's requirements.
+    
+
+Test Case 5:
+  - Test Name : Verify whether the error notification/message language is easily understandable when 'board_type' is 'none' and no user input is provided.
+    - Input : 'board_type' value provided as 'none', no user input is provided.
+    - Expected Output : The error notification language should be clear, concise, and easily understandable.
+
+Test Case 6:
+  - Test Name : Check for system's resilience under heavy load when 'board_type' is 'none' and user input is provided.
+    - Input : 'board_type' value is 'none', load the system with multiple simultaneous user inputs.
+    - Expected Output : The system should handle the load gracefully without performance degradation.
