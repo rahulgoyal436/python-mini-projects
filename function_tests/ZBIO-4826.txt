@@ -1,0 +1,35 @@
+Functional Test Cases:
+
+1. Test Case: Verify the system can take user input when board_type is 'none'
+   - Input: Set board_type as 'none' and provide user input
+   - Expected Output: System should successfully accept and process the user input
+
+2. Test Case: Verify the system's response when no user input is provided and board_type is 'none'
+   - Input: Set board_type as 'none' and do not provide any user input
+   - Expected Output: System should prompt for user input or show an appropriate error message
+
+3. Test Case: Verify the system's response when invalid user input is entered and board_type is 'none'
+   - Input: Set board_type as 'none' and provide invalid user input
+   - Expected Output: System should show an appropriate validation error message
+
+4. Test Case: Verify the system's response when board_type is not 'none'
+   - Input: Set board_type as anything other than 'none' and provide user input
+   - Expected Output: System should ignore the user input and proceed with the specified board_type
+
+Non-Functional Test Cases:
+
+1. Test Case: Verify the system's performance while taking user input when board_type is 'none'
+   - Input: Set board_type as 'none' and provide user input
+   - Expected Output: System should process the user input within an acceptable timeframe
+
+2. Test Case: Verify the system's reliability when continuously taking user input when board_type is 'none'
+   - Input: Set board_type as 'none' and provide user input continuously in multiple sessions
+   - Expected Output: System should consistently accept and process the user input without any issues
+
+3. Test Case: Verify the system's usability while taking user input when board_type is 'none'
+   - Input: Set board_type as 'none'
+   - Expected Output: System should provide a user-friendly interface for input entry
+
+4. Test Case: Validate the system's security while taking user input when board_type is 'none'
+   - Input: Set board_type as 'none' and provide user input
+   - Expected Output: System should securely handle the user input, ensuring no data leakage or unauthorized access
