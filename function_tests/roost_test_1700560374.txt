@@ -1,0 +1,43 @@
+As an AI model, I'm unable to access the given file path to read the user story. However, I can give you an example of how to create functional and non-functional test cases for a user story. 
+
+Let's assume a user story: "As a user, I want to be able to create an account, so I can have personalized access to the platform."
+
+Functional Test Cases:
+
+1. Test Case: Verify the "Create Account" button on the homepage.
+   - Input: Click on the "Create Account" button.
+   - Expected Output: User should be redirected to the account creation page.
+   - Edge Case: If the button is not working, user should be notified with an error message.
+
+2. Test Case: Verify the input field for "Username".
+   - Input: Enter a username.
+   - Expected Output: The username should be accepted and displayed in the "Username" field.
+   - Edge Case: If the user enters a username that's already taken, an error message should be displayed.
+
+3. Test Case: Verify the input field for "Password".
+   - Input: Enter a password.
+   - Expected Output: The password should be accepted and masked in the "Password" field.
+   - Edge Case: If the user enters a password that doesn't meet the platform's security requirements, an error message should be displayed.
+
+4. Test Case: Verify the "Submit" button on the account creation form.
+   - Input: Fill out the form and click on "Submit".
+   - Expected Output: The account should be created and the user should be redirected to their new account page.
+   - Edge Case: If any of the form fields are filled out incorrectly, the user should be notified with an error message.
+
+Non-Functional Test Cases:
+
+1. Test Case: Verify the response time of the "Create Account" button.
+   - Input: Click on the "Create Account" button.
+   - Expected Output: The account creation page should load within 2 seconds.
+
+2. Test Case: Verify the capacity of the "Username" field.
+   - Input: Enter a username with the maximum allowed number of characters.
+   - Expected Output: The username should be accepted and displayed in the "Username" field.
+
+3. Test Case: Verify the security of the "Password" field.
+   - Input: Enter a password.
+   - Expected Output: The entered password should be masked and stored securely.
+
+4. Test Case: Verify the compatibility of the account creation form on different browsers.
+   - Input: Open the account creation form on different browsers (e.g., Chrome, Firefox, Safari).
+   - Expected Output: The form should display and function correctly on all tested browsers.
