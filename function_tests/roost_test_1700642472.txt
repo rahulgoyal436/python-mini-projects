@@ -1,0 +1,39 @@
+Without the actual user story content from the provided path, it's impossible to generate specific test cases. However, I can provide a general structure for both functional and non-functional test cases based on a hypothetical user story.
+
+Assuming the user story is about a 'Login Functionality' of a web application.
+
+Functional Test Cases:
+
+1. Test Case: Verify if a user will be able to login with a valid username and valid password.
+    - Input: Enter valid Username & Password
+    - Expected Output: User should be able to login successfully.
+
+2. Test Case: Verify the login page for both, when the field is blank and Submit button is clicked.
+    - Input: Click Submit button leaving both fields blank.
+    - Expected Output: An error message "Username and Password cannot be empty" should be displayed.
+
+3. Test Case: Verify the 'Forgot Password' functionality.
+    - Input: Click 'Forgot Password' 
+    - Expected Output: User should be redirected to 'Reset Password' page.
+
+4. Test Case: Verify the browser's back button functionality after successful login.
+    - Input: Click browser's back button after successful login.
+    - Expected Output: User should not be able to go back to login page.
+
+Non-Functional Test Cases:
+
+1. Test Case: Check the load time of the login page.
+    - Expected Output: The login page should load within the acceptable time range.
+
+2. Test Case: Check the login functionality with multiple users at the same time.
+    - Input: Multiple Users logging in at the same time.
+    - Expected Output: All users should be able to login without any issues.
+
+3. Test Case: Verify if the login page is secure.
+    - Expected Output: The login page should be served over HTTPS.
+
+4. Test Case: Check the login functionality on different browsers.
+    - Input: Login with valid credentials on different browsers.
+    - Expected Output: Login should be successful on all tested browsers.
+
+Please provide the actual user story to get the specific test cases.
